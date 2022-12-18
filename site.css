@@ -1,7 +1,12 @@
 * {
     box-sizing: border-box;
   }
-  
+
+  /* Style the body */
+body {
+  font-family: Roboto;
+  margin: 0;
+}
 
   .navbar {
     overflow: hidden; /* Hide overflow */
@@ -25,8 +30,7 @@
   }
 
 
-
-.header {
+.container1 {
     padding: 80px; /* some padding */
     font-size: 40px
     width: 100%
@@ -38,67 +42,91 @@
 
   
   /* Increase the font size of the <h1> element */
-  .header h1 {
+  .container1 h1 {
     font-size: 40px;
   }
+
+
+  button {
+    text-decoration: none;
+    background-color: #000;
+        border: .5px solid crimson;
+        border-radius: 10px;
+        color: #fff;
+        padding: 8px;
+        box-shadow: 0 0 30px 0 crimson,
+                    0 0 30px 0 crimson,
+                    0 0 10px 0 crimson inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 6vh;
+    }
 
     /* FMain image, just for this example */
 .headerimg {
     background-color: #aaa;
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
     width: 80%;
-    padding: 20px;
+
   }
   
 
-/* Row container */
-.main {
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-     }
-
-/* Row container */
-.row1 {
-    background-color: gray;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-     }
-
-.row2 {
+.container2 {
     background-color: white;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
      }    
-    
-/* Style the body */
-body {
-    font-family: Roboto;
-    margin: 0;
-  }
 
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .row {
-      flex-direction: row;
+
+.container3 {
+  background-color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+   }    
+    
+.container4quote {
+    background-color: gray;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+     }   
+
+     .container4quote h3 {
+      font-size: 40px;
+      text-align: center;
+      font-style: italic;
     }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-    }
-  }
 
   .footer {
     padding: 20px; /* Some padding */
     text-align: center; /* Center text*/
     background: black; /* Black background */
+    font-color: white;
+    
   }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
